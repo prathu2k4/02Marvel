@@ -1,24 +1,4 @@
 # Task 6 - Flashing Morse Code
-Perfect 👍
-Below is a **complete, final, viva-ready ESP32 solution** that embeds **the same modern UI** directly into the ESP32 web server and **blinks Morse code on the LED**.
-
-This is **copy → upload → test** level code.
-
----
-
-# 🔴 ESP32 Web-Based Morse Code Blinker (Final Version)
-
-## 🎯 What This Version Does (End-to-End)
-
-✔ ESP32 hosts a **modern web page**
-✔ Same UI you tested on PC
-✔ User types message
-✔ Clicks **Send**
-✔ ESP32 converts text → Morse
-✔ **LED blinks Morse code**
-✔ Web page does **not break / reload badly**
-
----
 
 ## 🧰 Hardware Required
 

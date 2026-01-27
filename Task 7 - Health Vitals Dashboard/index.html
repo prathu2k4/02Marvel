@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Health Vitals Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Header -->
+    <header class="header">
+        <h1>🫀 Health Vitals Dashboard</h1>
+        <button id="themeToggle">🌗 Toggle Theme</button>
+    </header>
+
+    <!-- Status -->
+    <div class="status">
+        <span class="dot"></span>
+        <span id="statusText">Connected</span>
+    </div>
+
+    <!-- BPM Card -->
+    <div class="card">
+        <h2>Heart Rate</h2>
+        <p class="bpm"><span id="bpmValue">--</span> BPM</p>
+    </div>
+
+    <!-- Graph -->
+    <div class="chart-container">
+        <canvas id="bpmChart"></canvas>
+    </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

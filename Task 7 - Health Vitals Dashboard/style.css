@@ -1,0 +1,88 @@
+:root {
+    --bg-gradient: linear-gradient(135deg, #1d2671, #c33764, #00c6ff);
+    --card-bg: rgba(255, 255, 255, 0.15);
+    --text-color: #ffffff;
+}
+
+body.light {
+    --bg-gradient: linear-gradient(135deg, #fdfbfb, #ebedee, #d7e1ec);
+    --card-bg: #ffffff;
+    --text-color: #111111;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+.app {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Status */
+.status {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #00ff99;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* Card */
+.card {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bpm {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Chart */
+.chart-container {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .bpm {
+        font-size: 2.2rem;
+    }
+}

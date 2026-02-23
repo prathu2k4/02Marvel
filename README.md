@@ -1,8 +1,5 @@
-# **Project Completion Report**
-
 ## **Level 1 – Introduction to ESP32 & Basic Components**
 
----
 
 ## **Task 1a – Theory: Digital I/O & Interrupts**
 
@@ -56,22 +53,11 @@ This task improved my understanding of embedded logic design, real-time interact
 
 ![Image](https://www.upesy.com/cdn/shop/files/doc-breadboard-wiring-dht11-esp32-arduino-schematic.png)
 
-In this task, I implemented a temperature-controlled fan system using the ESP32, DHT11 sensor, and a DC motor controlled via a relay or motor driver. The goal was to demonstrate automation by linking sensor readings to actuator control.
+In this task, I implemented a temperature-controlled fan system using the ESP32, DHT11 sensor, and a DC motor controlled via L298N motor driver. The goal was to demonstrate automation by linking sensor readings to actuator control.
 
 The DHT11 sensor continuously measured ambient temperature, and the readings were displayed on the serial monitor. A predefined temperature threshold was set in the program. When the temperature exceeded this limit, the ESP32 activated the motor driver to turn on the fan. When the temperature dropped below the threshold, the motor turned off automatically.
 
 This project provided hands-on experience in sensor interfacing, serial monitoring, conditional logic, and actuator control. It demonstrated how embedded systems can be applied to real-world environmental automation.
-
-
-
----
-
-
-
-# **Project Completion Report**
-
-## **IoT Communication, Wired Protocols & Cloud Data Logging**
-
 ---
 
 ## **Task 3a – IoT Communication Protocols**
@@ -150,25 +136,6 @@ This allowed me to observe trends and understand how humidity levels influence s
 Through this task, I learned how to publish sensor data to a cloud server, retrieve datasets for analysis, visualize trends, and apply basic machine learning techniques for prediction.
 
 
-
----
-
-# **Overall Conclusion**
-
-All tasks related to IoT communication, wired protocols, and cloud-based data analysis were successfully completed. I gained strong practical knowledge in MQTT communication, I2C microcontroller communication, cloud data logging using ThingSpeak, and regression modeling for predictive analysis. These tasks enhanced my understanding of real-world IoT systems, remote device control, and data-driven decision making.
-
-
-# **Conclusion**
-
-All Level 1 tasks were successfully completed. Through these activities, I strengthened my understanding of ESP32 programming, GPIO configuration, interrupt handling, and sensor-based automation systems.
-
-
-
-
-# **Project Completion Report**
-
-## **Web Servers & Local Interfaces**
-
 ---
 
 ## **Task 6 – Flashing Morse Code Using ESP32 Web Server**
@@ -189,15 +156,7 @@ The implementation involved defining a Morse code lookup table within the progra
 
 Through this project, I gained hands-on experience in creating embedded web servers, handling HTTP requests, processing user input, and integrating software logic with physical output devices. This task demonstrated how web interfaces can be used for device control and communication in embedded systems.
 
-**Status: Successfully Completed**
-
 ---
-
-### **Takeaway**
-
-This task enhanced my understanding of local web servers, HTTP-based communication, and real-time interaction between user interfaces and hardware components using the ESP32.
-
-# **Project Completion Report**
 
 ## **Task 9 – Fire Alarm System with SMS Alerts (Using Twilio API)**
 
@@ -218,11 +177,3 @@ Simultaneously, the ESP32 connected to a Wi-Fi network and sent an HTTP request 
 The system was tested under proper supervision with safety precautions, using controlled conditions to simulate flame detection. No real fire hazards were involved during testing.
 
 Through this task, I gained practical experience in flame sensor interfacing, Wi-Fi communication, REST API handling, and real-time SMS alert integration. This project highlighted how IoT systems can be implemented for safety monitoring and emergency notification applications.
-
-**Status: Successfully Completed**
-
----
-
-### **Takeaway**
-
-This task helped me understand fire detection systems and strengthened my ability to integrate microcontrollers with cloud APIs like Twilio to create automated SMS-based emergency alert systems.

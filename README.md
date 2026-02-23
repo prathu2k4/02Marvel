@@ -47,7 +47,6 @@ In this task, I implemented a temperature-controlled fan system using the ESP32,
 
 The DHT11 sensor continuously measured ambient temperature, and the readings were displayed on the serial monitor. A predefined temperature threshold was set in the program. When the temperature exceeded this limit, the ESP32 activated the motor driver to turn on the fan. When the temperature dropped below the threshold, the motor turned off automatically.
 
-This project provided hands-on experience in sensor interfacing, serial monitoring, conditional logic, and actuator control. It demonstrated how embedded systems can be applied to real-world environmental automation.
 ---
 
 ## **Task 3a – IoT Communication Protocols**
@@ -64,13 +63,6 @@ I compared these protocols based on speed, reliability, bandwidth usage, and sca
 
 ## **Task 3b – Controlling LEDs Using MQTT**
 
-![Image](https://esp32io.com/images/tutorial/esp32-button-led-wiring-diagram.jpg)
-
-![Image](https://www.hivemq.com/sb-assets/f/243938/284x150/2a67a28f71/mqtt-publish-subscribe.svg)
-
-![Image](https://hackster.imgix.net/uploads/attachments/1061896/_lHn0BxLdNc.blob?auto=compress\&fit=min\&fm=jpg\&h=675\&w=900)
-
-![Image](https://esp32io.com/images/tutorial/esp32-multiple-led-wiring-diagram.jpg)
 
 In this task, I implemented LED control using the MQTT protocol. The goal was to establish publishing and subscribing functionality using an MQTT platform and apply it to real hardware control.
 

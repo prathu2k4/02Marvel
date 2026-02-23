@@ -5,12 +5,6 @@
 
 ![Image](https://esp32.implrust.com/esp32-intro/images/ESP32-DevKit-V1-Pinout-Diagram.png)
 
-![Image](https://www.upesy.com/cdn/shop/files/doc-esp32-pinout-reference-wroom-devkit.png)
-
-![Image](https://images.openai.com/static-rsc-3/4HJKkWrOpQjEiYGETAfZddRjyESLPIIs-lGAiKt8Gf8RmJHakG4RfFUJeC4mEbx43LCsaN3I-16GYL7-kvIcvaw-TLz5OFTCgZN_GRY38CA?purpose=fullsize\&v=1)
-
-![Image](https://udevices.io/cdn/shop/files/ESP32-WROOM-32E_top.jpg?v=1721928504\&width=1946)
-
 In this task, I studied the fundamentals of GPIO configuration and interrupt handling on the ESP32 microcontroller. The objective was to understand how digital pins are configured as inputs or outputs and how interrupts improve system efficiency.
 
 I learned how to control external components such as LEDs using output pins and how to read signals from pushbuttons using input pins with internal pull-up or pull-down resistors to prevent floating states. I also explored edge-triggered interrupts and how Interrupt Service Routines (ISRs) allow the ESP32 to respond instantly to events without continuous polling. Basic debouncing concepts were also reviewed to ensure reliable button detection.
@@ -26,10 +20,6 @@ This task built a strong theoretical foundation in embedded systems and prepared
 ![Image](https://miro.medium.com/v2/resize%3Afit%3A1152/0%2Au1joqlnG3T03UdAp.png)
 
 ![Image](https://content.instructables.com/FH2/E2ZX/M66HL3DF/FH2E2ZXM66HL3DF.png?auto=webp)
-
-![Image](https://thumbs.wokwi.com/projects/397345300543832065/social/1715387330044.png)
-
-![Image](https://thumbs.wokwi.com/projects/391439742511247361/social/1709564878843.png)
 
 In this task, I developed a Simon Says game using the ESP32, LEDs, and pushbuttons to apply GPIO and interrupt concepts practically. The system generated a random sequence of LED flashes, and the user had to replicate the pattern by pressing the corresponding buttons in the correct order. With each successful round, the sequence length increased, making the game progressively more challenging.
 

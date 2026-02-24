@@ -35,7 +35,7 @@ ESP32-ready (mock data now, real data later)
 📁 Folder Structure
 
 Create this exactly:
-
+```
 health-dashboard/
 │
 ├── index.html
@@ -43,12 +43,12 @@ health-dashboard/
 │   └── style.css
 └── js/
     └── app.js
-
+```
 
 ---
 
 🧱 index.html
-
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,12 +94,12 @@ health-dashboard/
 <script src="js/app.js"></script>
 </body>
 </html>
-
+```
 
 ---
 
 🎨 css/style.css
-
+```
 :root {
     --bg-gradient: linear-gradient(135deg, #1d2671, #c33764, #00c6ff);
     --card-bg: rgba(255, 255, 255, 0.15);
@@ -188,12 +188,12 @@ button {
         font-size: 2.2rem;
     }
 }
-
+```
 
 ---
 
 ⚙️ js/app.js
-
+```
 const bpmValue = document.getElementById("bpmValue");
 const themeToggle = document.getElementById("themeToggle");
 
@@ -255,13 +255,13 @@ setInterval(() => {
     bpmChart.update();
 }, 2000);
 
-
+```
 ---
 
 🔌 How ESP32 Will Connect Later (Important)
 
 Later, you will only change this part:
-
+```
 function getMockBPM() {
     return Math.floor(65 + Math.random() * 15);
 }
@@ -273,7 +273,7 @@ async function getBPMFromESP32() {
     const json = await res.json();
     return json.bpm;
 }
-
+```
 ✅ NO UI or graph logic changes needed
 
 

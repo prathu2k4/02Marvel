@@ -58,13 +58,13 @@ Read API Key → used by Python
 3. ESP32 Code (Arduino IDE)
 
 Libraries Required
-
+```
 WiFi.h
 
 HTTPClient.h
 
 DHT.h
-
+```
 
 Connections
 
@@ -74,7 +74,7 @@ Soil Moisture Sensor → GPIO 34 (ADC)
 
 
 ESP32 Code
-
+```
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include "DHT.h"
@@ -126,18 +126,18 @@ void loop() {
 
   delay(15000); // ThingSpeak minimum interval
 }
-
+```
 
 ---
 
 4. Retrieving Data from ThingSpeak (Python)
 
 Install Required Libraries
-
+```
 pip install pandas matplotlib numpy requests scikit-learn
-
+```
 Python Code to Fetch Data
-
+```
 import requests
 import pandas as pd
 
@@ -158,14 +158,14 @@ df['moisture'] = pd.to_numeric(df['field3'])
 
 df = df.dropna()
 print(df.head())
-
+```
 
 ---
 
 5. Plot Graphs Using Matplotlib
 
 Temperature vs Time
-
+```
 import matplotlib.pyplot as plt
 
 plt.figure()
@@ -176,32 +176,32 @@ plt.title("Temperature vs Time")
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
-
+```
 Temperature vs Soil Moisture
-
+```
 plt.figure()
 plt.scatter(df['temperature'], df['moisture'])
 plt.xlabel("Temperature (°C)")
 plt.ylabel("Soil Moisture (%)")
 plt.title("Temperature vs Soil Moisture")
 plt.show()
-
+```
 Humidity vs Soil Moisture
-
+```
 plt.figure()
 plt.scatter(df['humidity'], df['moisture'])
 plt.xlabel("Humidity (%)")
 plt.ylabel("Soil Moisture (%)")
 plt.title("Humidity vs Soil Moisture")
 plt.show()
-
+```
 
 ---
 
 6. Regression Model (Humidity → Moisture)
 
 Linear Regression Model
-
+```
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
@@ -216,6 +216,7 @@ y_pred = model.predict(X)
 print("Slope:", model.coef_[0])
 print("Intercept:", model.intercept_)
 print("R² Score:", model.score(X, y))
+```
 
 
 ---
@@ -225,7 +226,7 @@ print("R² Score:", model.score(X, y))
 X-axis: Humidity
 
 Y-axis: Moisture Percentage
-
+```
 plt.figure()
 plt.scatter(df['humidity'], df['moisture'], label="Actual Data")
 plt.plot(df['humidity'], y_pred, label="Regression Line")
@@ -234,7 +235,7 @@ plt.ylabel("Moisture Percentage (%)")
 plt.title("Regression: Humidity vs Moisture")
 plt.legend()
 plt.show()
-
+```
 
 ---
 
